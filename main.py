@@ -6,13 +6,13 @@ balance = wallet.balance()
 token = '764914862:AAGfQycEKhlApnEKOsGBlkmytNbk9NzD0bE'
 bot = telebot.TeleBot(token)
 
-def mes_on_start(message):
-    bot.send_message(message.from_user.id, balance)
+
 
 
 @bot.message_handler(commands=['start'])
-mes_on_start()
-
+def mes_on_start(message):
+    global balance
+    bot.send_message(message.from_user.id, text=balance)
 
 
 
