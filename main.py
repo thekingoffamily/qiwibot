@@ -1,9 +1,5 @@
 import telebot
 import pyqiwi
-from pyqiwi import Wallet
-
-
-
 
 token = '764914862:AAGfQycEKhlApnEKOsGBlkmytNbk9NzD0bE'
 
