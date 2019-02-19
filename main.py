@@ -14,6 +14,11 @@ def mes_on_start(message):
     wallet = pyqiwi.Wallet(token='d25424a423bdb129db09b4c5f4ddee66', number='79164763578')
     bot.send_message(message.from_user.id, wallet.balance())
 
+@bot.message_handler(commands=['test'])
+def balance1(message):
+    wallet = pyqiwi.Wallet(token='d25424a423bdb129db09b4c5f4ddee66', number='79164763578')
+    return wallet.balance()
+
 
 if __name__ == '__main__':
     bot.polling(none_stop=True)
