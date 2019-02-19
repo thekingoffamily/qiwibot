@@ -5,7 +5,7 @@ import pyqiwi
 token = '764914862:AAGfQycEKhlApnEKOsGBlkmytNbk9NzD0bE'
 bot = telebot.TeleBot(token)
 
-wallet = pyqiwi.Wallet(token='d25424a423bdb129db09b4c5f4ddee66', number='79164763578')
+wallet = pyqiwi.Wallet('d25424a423bdb129db09b4c5f4ddee66', '79164763578')
 balance = str(wallet.balance())
 
 
