@@ -14,7 +14,7 @@ def mes_on_start(message):
 
 @bot.message_handler(commands=['bal1'])
 def mes_on_start(message):
-    bot.send_message(message.from_user.id, wallet.balance())
+    bot.send_message(message.from_user.id, wallet_79164763578.balance())
 
 
 if __name__ == '__main__':
