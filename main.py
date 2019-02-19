@@ -2,7 +2,7 @@ import telebot
 import pyqiwi
 from pyqiwi import Wallet
 
-wallet = pyqiwi.Wallet(token='d25424a423bdb129db09b4c5f4ddee66', number='79164763578')
+
 
 
 token = '764914862:AAGfQycEKhlApnEKOsGBlkmytNbk9NzD0bE'
@@ -15,6 +15,7 @@ def mes_on_start(message):
 
 @bot.message_handler(commands=['/bal1'])
 def mes_on_start(message):
+    wallet = pyqiwi.Wallet(token='d25424a423bdb129db09b4c5f4ddee66', number='79164763578')
     bot.send_message(message.from_user.id, wallet.balance())
 
 
