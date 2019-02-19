@@ -17,6 +17,7 @@ def mes_on_start(message):
 
 @bot.message_handler(commands=['test'])
 def balance1(message):
+    global balance
     bot.send_message(message.from_user.id, balance)
 
 
