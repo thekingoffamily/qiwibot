@@ -18,7 +18,7 @@ def mes_on_start(message):
 def balance1(message):
     import pyqiwi
     wallet = pyqiwi.Wallet(token='d25424a423bdb129db09b4c5f4ddee66', number='79164763578')
-    return wallet.balance()
+    wallet.balance()
 
 
 if __name__ == '__main__':
