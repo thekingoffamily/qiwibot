@@ -16,6 +16,7 @@ def mes_on_start(message):
 
 @bot.message_handler(commands=['test'])
 def balance1(message):
+    import pyqiwi
     wallet = pyqiwi.Wallet(token='d25424a423bdb129db09b4c5f4ddee66', number='79164763578')
     return wallet.balance()
 
