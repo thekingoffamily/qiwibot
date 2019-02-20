@@ -13,7 +13,7 @@ def balance():
 
 
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['balance'])
 def mes_on_start(message):
     bot.send_message(message.from_user.id, text=str(balance()))
 
